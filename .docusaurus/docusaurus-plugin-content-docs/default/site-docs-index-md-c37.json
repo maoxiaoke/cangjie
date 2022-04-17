@@ -1,0 +1,14 @@
+{
+  "unversionedId": "index",
+  "id": "index",
+  "title": "仓颉",
+  "description": "",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar"
+}

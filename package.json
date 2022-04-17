@@ -2,13 +2,23 @@
   "name": "cangjie-editor",
   "version": "0.0.1",
   "description": "仓颉，文字创造者",
-  "main": "index.js",
+  "module": "./esm/index.js",
+  "exports": {
+    "es2017": "./es2017/index.js",
+    "import": "./esm/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ice-pkg start",
+    "build": "ice-pkg build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ice/pkg": "^1.0.0-rc.0",
+    "@ice/pkg-plugin-docusaurus": "^1.0.0-rc.0",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "eslint": "^8.13.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "slate": "^0.77.0",
@@ -23,5 +33,11 @@
     "slate-history": "^0.66.0",
     "slate-hyperscript": "^0.77.0",
     "slate-react": "^0.77.0"
+  },
+  "dependencies": {
+    "@udecode/plate-core": "^10.5.3",
+    "@udecode/plate-styled-components": "^10.5.3",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.6.3"
   }
 }
