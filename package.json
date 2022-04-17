@@ -1,6 +1,6 @@
 {
   "name": "cangjie-editor",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "仓颉，文字创造者",
   "main": "index.js",
   "scripts": {
