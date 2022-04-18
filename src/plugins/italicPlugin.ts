@@ -13,12 +13,7 @@ export const MARK_ITALIC = 'italic';
 export const createItalicPlugin = createPluginFactory<ToggleMarkPlugin>({
   key: MARK_ITALIC,
   isLeaf: true,
-  handlers: {
-    onKeyDown: onKeyDownToggleMark,
-  },
-  options: {
-    hotkey: 'mod+i',
-  },
+
   deserializeHtml: {
     rules: [
       { validNodeName: ['EM', 'I'] },
@@ -30,5 +25,13 @@ export const createItalicPlugin = createPluginFactory<ToggleMarkPlugin>({
     ],
     query: (el) =>
       !someHtmlElement(el, (node) => node.style.fontStyle === 'normal'),
+  },
+
+  handlers: {
+    onKeyDown: onKeyDownToggleMark,
+  },
+
+  options: {
+    hotkey: 'mod+i',
   },
 });
