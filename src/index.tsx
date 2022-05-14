@@ -3,13 +3,13 @@ import { Plate, createPlugins } from '@udecode/plate-core';
 import { createUIPlugin } from './plugins/ui/createUI';
 import { createBoldPlugin } from './plugins/boldPlugin';
 import { createItalicPlugin } from './plugins/italicPlugin';
+import { createHeadingPlugin } from './plugins/nodes/createHeadingPlugin';
 
 import type { PlateStoreState, PlatePlugin } from '@udecode/plate-core';
 
 const ID = 'cangjie';
 
 const components = createUIPlugin();
-
 export interface CangjieProps<T = {}> {
   /**
    * The chilren rendered inside Cangjie
@@ -30,14 +30,16 @@ export interface CangjieProps<T = {}> {
 }
 
 export default function Cangjie (props: CangjieProps) {
-  const plugins = createPlugins([
-    createBoldPlugin(),
-    createItalicPlugin(),
-  ],
-  {
-    // @ts-ignore
-    components,
-  }
+  const plugins = createPlugins(
+    [
+      createBoldPlugin(),
+      createItalicPlugin(),
+      createHeadingPlugin(),
+    ],
+    {
+      // @ts-ignore
+      components,
+    }
   )
 
   return (
