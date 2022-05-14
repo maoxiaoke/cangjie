@@ -1,12 +1,17 @@
 {
   "name": "cangjie-editor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "仓颉，文字创造者",
   "module": "./esm/index.js",
   "exports": {
     "es2017": "./es2017/index.js",
     "import": "./esm/index.js"
   },
+  "types": "./esm/index.d.ts",
+  "files": [
+    "/es2017",
+    "/esm"
+  ],
   "scripts": {
     "start": "ice-pkg start",
     "build": "ice-pkg build"
