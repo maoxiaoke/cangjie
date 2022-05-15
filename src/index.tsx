@@ -4,12 +4,14 @@ import { createUIPlugin } from './plugins/ui/createUI';
 import { createBoldPlugin } from './plugins/boldPlugin';
 import { createItalicPlugin } from './plugins/italicPlugin';
 import { createHeadingPlugin } from './plugins/nodes/createHeadingPlugin';
+import { createParagraphPlugin } from './plugins/nodes/createParagraphPlugin';
+import { withStyledPlaceHolders } from './placeholders';
 
 import type { PlateStoreState, PlatePlugin } from '@udecode/plate-core';
 
 const ID = 'cangjie';
 
-const components = createUIPlugin();
+const components =  withStyledPlaceHolders(createUIPlugin());
 export interface CangjieProps<T = {}> {
   /**
    * The chilren rendered inside Cangjie
@@ -26,7 +28,7 @@ export interface CangjieProps<T = {}> {
    * extraPlugis need to append to
    * @default []
    */
-  extraPlugins: PlatePlugin<T>[];
+  extraPlugins?: PlatePlugin<T>[];
 }
 
 export default function Cangjie (props: CangjieProps) {
@@ -34,6 +36,7 @@ export default function Cangjie (props: CangjieProps) {
     [
       createBoldPlugin(),
       createItalicPlugin(),
+      createParagraphPlugin(),
       createHeadingPlugin(),
     ],
     {

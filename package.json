@@ -42,7 +42,9 @@
   "dependencies": {
     "@udecode/plate-core": "^10.5.3",
     "@udecode/plate-styled-components": "^10.5.3",
+    "@udecode/plate-ui-placeholder": "^11.0.2",
     "styled-components": "^5.3.5",
+    "twin.macro": "^2.8.2",
     "typescript": "^4.6.3"
   }
 }

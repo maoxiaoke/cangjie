@@ -3,6 +3,7 @@ import { StyledLeaf, StyledElement } from '@udecode/plate-styled-components';
 import { MARK_BOLD } from '../boldPlugin';
 import { MARK_ITALIC } from '../italicPlugin';
 import { ELEMENT_H1, ELEMENT_H2, ELEMENT_H3 } from '../nodes/createHeadingPlugin';
+import { ELEMENT_PARAGRAPH } from '../nodes/createParagraphPlugin';
 import { withProps } from './withProps';
 
 import { css } from 'styled-components';
@@ -34,7 +35,17 @@ export const createUIPlugin = () => {
           color: #434343;
         `
       }
-    })
+    }),
+    [ELEMENT_PARAGRAPH]: withProps(StyledElement, {
+      as: 'p',
+      styles: {
+        root: css`
+          padding: 2px 0;
+          margin: 0;
+        `,
+      },
+      prefixClassNames: 'p',
+    }),
   }
 
   return components;
