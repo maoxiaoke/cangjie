@@ -13,7 +13,7 @@ export default {
   "favicon": "https://img.alicdn.com/imgextra/i2/O1CN01jUf9ZP1aKwVvEc58W_!!6000000003312-73-tps-160-160.ico",
   "staticDirectories": [],
   "plugins": [
-    "/Users/maoxiaoke/ali-project/cangjie/node_modules/.pnpm/@ice+pkg-plugin-docusaurus@1.0.0-rc.0_afc660cc97fccb3e1716c22bf89ef61d/node_modules/@ice/pkg-plugin-docusaurus/esnext/plugin.js"
+    "/Users/nazha/nazha-all/cangjie/node_modules/.pnpm/@ice+pkg-plugin-docusaurus@1.0.0-rc.0_v7dgbtex7tft4fywyiv7rhxwdu/node_modules/@ice/pkg-plugin-docusaurus/esnext/plugin.js"
   ],
   "presets": [
     [
@@ -26,7 +26,7 @@ export default {
           "routeBasePath": "/"
         },
         "theme": {
-          "customCss": "/Users/maoxiaoke/ali-project/cangjie/node_modules/.pnpm/@ice+pkg-plugin-docusaurus@1.0.0-rc.0_afc660cc97fccb3e1716c22bf89ef61d/node_modules/@ice/pkg-plugin-docusaurus/esnext/css/custom.css"
+          "customCss": "/Users/nazha/nazha-all/cangjie/node_modules/.pnpm/@ice+pkg-plugin-docusaurus@1.0.0-rc.0_v7dgbtex7tft4fywyiv7rhxwdu/node_modules/@ice/pkg-plugin-docusaurus/esnext/css/custom.css"
         }
       }
     ]

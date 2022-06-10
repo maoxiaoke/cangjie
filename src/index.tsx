@@ -37,6 +37,7 @@ export default function Cangjie (props: CangjieProps) {
       createBoldPlugin(),
       createItalicPlugin(),
       createParagraphPlugin(),
+      // FIXME: types
       createHeadingPlugin(),
     ],
     {
